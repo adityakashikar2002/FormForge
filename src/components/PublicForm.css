@@ -1,0 +1,299 @@
+/* 
+
+.public-form-container {
+  width: 60%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.public-form-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.public-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.public-field-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.public-field-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.public-input-wrapper {
+  position: relative;
+}
+
+.public-input,
+.public-textarea,
+.public-select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.public-input:focus,
+.public-textarea:focus,
+.public-select:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.public-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.public-checkbox-container,
+.public-radio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.public-checkbox-label,
+.public-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.public-checkbox,
+.public-radio {
+  margin: 0;
+}
+
+.public-submit-btn {
+  background: #4a90e2;
+  color: white;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.public-submit-btn:hover {
+  background: #357bd2;
+}
+
+
+@media (max-width: 768px) {
+  .public-form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .public-input,
+  .public-textarea,
+  .public-select {
+    font-size: 0.9rem;
+  }
+
+  .public-submit-btn {
+    font-size: 1rem;
+  }
+} */
+
+/* PublicForm.css (Updated) */
+
+.public-form-container {
+  width: 60%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.public-form-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.public-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.public-field-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.public-field-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.public-input-wrapper {
+  position: relative;
+}
+
+.public-input,
+.public-textarea,
+.public-select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.public-input:focus,
+.public-textarea:focus,
+.public-select:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.public-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.public-checkbox-container,
+.public-radio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.public-checkbox-label,
+.public-radio-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.public-checkbox,
+.public-radio {
+  margin: 0;
+}
+
+.public-submit-btn {
+  background: #4a90e2;
+  color: white;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.public-submit-btn:hover {
+  background: #357bd2;
+}
+
+/* Validation Styles */
+.public-input-group {
+  position: relative;
+}
+
+/* .icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+} */
+
+.success-icon {
+  color: #48bb78;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+.error-icon {
+  color: #e53e3e;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+}
+
+.input-error {
+  border-color: #e53e3e;
+}
+
+.input-default {
+  border-color: #ddd;
+}
+
+.error-msg {
+  color: #e53e3e;
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+.required-star {
+  color: #e53e3e;
+  margin-left: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .public-form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .public-input,
+  .public-textarea,
+  .public-select {
+    font-size: 0.9rem;
+  }
+
+  .public-submit-btn {
+    font-size: 1rem;
+  }
+}

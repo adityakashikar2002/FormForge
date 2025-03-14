@@ -1,0 +1,13 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
