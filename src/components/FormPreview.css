@@ -182,3 +182,35 @@
 .saved-forms-btn:hover {
   background-color: #0d326d;
 }
+
+.publish-url-container {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0; /* Light background for visibility */
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.publish-url {
+  margin-right: 8px; /* Space between URL and copy button */
+  overflow-x: auto; /* Enable horizontal scrolling if URL is too long */
+  white-space: nowrap; /* Prevent line breaks */
+}
+
+.copy-url-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  display: flex; /* Centers the icon */
+  align-items: center;
+  justify-content: center;
+}
+
+.copy-url-btn:hover {
+  background-color: #0056b3;
+}

@@ -1,35 +1,3 @@
-// // store/store.js
-// import { configureStore } from '@reduxjs/toolkit';
-// import formReducer from './formSlice';
-
-// const loadState = () => {
-//   try {
-//     const serializedState = localStorage.getItem('formState');
-//     return serializedState ? JSON.parse(serializedState) : undefined;
-//   } catch (e) {
-//     return undefined;
-//   }
-// };
-
-// const saveState = (state) => {
-//   try {
-//     localStorage.setItem('formState', JSON.stringify(state));
-//   } catch (e) {
-//     console.error("Could not save state", e);
-//   }
-// };
-
-// export const store = configureStore({
-//   reducer: {
-//     form: formReducer,
-//   },
-//   preloadedState: loadState(),
-// });
-
-// store.subscribe(() => {
-//   saveState(store.getState().form);
-// });
-
 import { configureStore } from '@reduxjs/toolkit';
 import formReducer from './formSlice';
 

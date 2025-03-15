@@ -56,14 +56,6 @@ const SavedForms = () => {
               <div className="delete-icon" onClick={() => handleDelete(form.id)}>
                 <AiOutlineClose />
               </div>
-              {/* <div className="form-info">
-                <span className="form-name">{form.name}</span>
-                <span className="form-date">Saved on: {formatDate(form.id)}</span>
-              </div>
-              <div className="form-actions">
-                <button onClick={() => handleEdit(form.id)} className="edit-form-btn">Edit</button>
-                <button onClick={() => navigate(`/preview/${form.id}`)} className="view-form-btn">View</button>
-              </div> */}
             </motion.div>
           ))}
         </div>
