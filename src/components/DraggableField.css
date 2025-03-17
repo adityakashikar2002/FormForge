@@ -1,4 +1,4 @@
-.draggable-field {
+/* .draggable-field {
   display: flex;
   align-items: center;
   background: #ffffff;
@@ -58,4 +58,94 @@
 
 .delete-btn:hover {
   color: #c82333;
+} */
+
+.draggable-field {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Allows content to wrap on smaller screens */
+}
+
+.draggable-field:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.drag-handle {
+  cursor: grab;
+  margin-right: 10px;
+  font-size: 1.5em;
+  color: #6c757d;
+}
+
+.field-label {
+  flex-grow: 1;
+  font-size: 1em;
+  color: #495057;
+  min-width: 100px; /* Prevents text from shrinking too much */
+}
+
+.required {
+  color: red;
+  margin-left: 5px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .draggable-field {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
+  }
+
+  .drag-handle {
+    font-size: 1.2em;
+  }
+
+  .field-label {
+    font-size: 0.9em;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .edit-btn, .delete-btn {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .draggable-field {
+    padding: 6px;
+  }
+
+  .drag-handle {
+    font-size: 1em;
+  }
+
+  .field-label {
+    font-size: 0.85em;
+  }
+
+  .actions {
+    gap: 5px;
+  }
+
+  .edit-btn, .delete-btn {
+    font-size: 0.9em;
+  }
 }

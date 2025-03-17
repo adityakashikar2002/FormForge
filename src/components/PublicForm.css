@@ -1,5 +1,4 @@
 
-/* PublicForm.css (Updated) */
 
 .public-form-container {
   width: 60%;
@@ -106,7 +105,6 @@
   background: #357bd2;
 }
 
-/* Validation Styles */
 .public-input-group {
   position: relative;
 }
@@ -148,7 +146,6 @@
   margin-left: 4px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .public-form-container {
     width: 90%;

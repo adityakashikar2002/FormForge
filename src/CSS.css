@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: 'Poppins', sans-serif;
     background-color: #f7f9fc;
     margin: 0;
@@ -10,4 +10,42 @@ body {
     align-items: center;
     height: 100vh;
   }
-  
+   */
+
+   body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; /* Adds some space for smaller screens */
+    box-sizing: border-box;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 5px;
+    }
+}
